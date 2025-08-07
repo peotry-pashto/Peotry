@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ورځنۍ وینا او آیت شریف</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="status-indicator" id="status"></div>
+
+  <div class="box">
+    <div class="title">آیت شریف</div>
+    <div class="content" id="verse">
+      قُلْ هَلْ يَسْتَوِي ٱلَّذِينَ يَعْلَمُونَ وَٱلَّذِينَ لَا يَعْلَمُونَ ۗ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَٰبِ
+      <br><br>
+      <span class="highlight">ژباړه:</span> وایه (ای محمده!) آیا هغه کسان چې پوهه لري او هغه کسان چې پوهه نه لري، سره برابر دي؟ بېشکه نصیحت یوازې عقل لرونکي اخلي.
+    </div>
+    <div class="source">سورة الزمر، آیت ۹</div>
+  </div>
+
+  <div class="box">
+    <div class="title">ورځنۍ وینا</div>
+    <div class="content" id="quote">
+      چا چې اودس تازه ڪړ، او بیا یې د شهادت ڪلیمه وویله، نو د جنت [ ٨ ] دروازې به ورته خلاصې شي.
+    </div>
+    <div class="source">
+      حضرت محمد ﷺ<br>
+      ماخذ: رواه مسلم
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h2>نوی ثبت</h2>
+    <textarea id="newVerse" placeholder="آیت شریف..."></textarea>
+    <textarea id="newVerseTrans" placeholder="ژباړه..."></textarea>
+    <input type="text" id="verseSource" placeholder="سورة او آیت شمېره">
+    <textarea id="newQuote" placeholder="ورځنۍ وینا..."></textarea>
+    <input type="text" id="quoteSource" placeholder="ماخذ">
+    <button onclick="updateContent()">ثبت کړه</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
